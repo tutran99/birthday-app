@@ -8,7 +8,8 @@ get '/form' do
     erb :form
 end
 
-get '/birthday' do
+post '/birthday' do
 p params
  @date = params[:date]
+ erb :index
 end
