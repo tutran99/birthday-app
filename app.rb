@@ -12,5 +12,8 @@ post '/birthday' do
 p params
  @date = params[:date]
  @todays_date = DateTime.now
+
+p @date
+p @todays_date
  erb :index
 end
