@@ -1,4 +1,4 @@
-require 'sinatra'
+require 'sinatra' 
 
 get '/' do
  'test'
@@ -11,5 +11,6 @@ end
 post '/birthday' do
 p params
  @date = params[:date]
+ @todays_date = DateTime.now
  erb :index
 end
