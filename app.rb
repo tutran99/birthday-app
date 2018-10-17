@@ -11,6 +11,7 @@ end
 post '/birthday' do
 p params
  @date = params[:date]
+ @username = params[:username]
  @todays_date = DateTime.now
 
 p @date
