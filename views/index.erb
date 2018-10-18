@@ -1,9 +1,9 @@
-<h1>Hello <%= @username%> your birthday is on <%= @date %> </h1>
-<div> Today's date is <%= @todays_date.strftime("%d/%m/%y") %> </div>
-<% if @date.to_s == @todays_date.strftime("%d/%m/%y").to_s %>
+<h1>Hello <%= @username%> your birthday is on <%= @user_choice%> </h1>
+<div> Today's date is <%= @todays_date%> </div>
+<% if @user_choice == @todays_date_format%>
 <br>
 Happy Birthday!!!
 <% else %>
 <br>
-Today is not your birthday
+Sorry <%= @username%>, today is not your birthday. Your birthday will be in  days
 <%end%>
